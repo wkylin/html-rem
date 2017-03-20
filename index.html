@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="index.css">
+    <!--<script>
+      document.addEventListener('DOMContentLoaded', function (e) {
+        document.getElementsByTagName('html')[0].style.fontSize = window.innerWidth / 10 + 'px';
+      }, false);
+
+      var dpr= window.devicePixelRatio;
+      var meta = document.getElementsByTagName('meta')[0];
+      meta.setAttribute('content', 'initial-scale=' + 1 / dpr + ', maximum-scale=' + 1 / dpr + ', minimum-scale=' + 1 / dpr + ', user-scalable=no');
+    </script>-->
+  
+  </head>
+  <body>
+    <!--<div class="con"></div>-->
+    <div class="text12"> 中华人民共和国</div>
+    <div class="text13"> 中华人民共和国</div>
+    <div class="text14"> 中华人民共和国</div>
+    <div class="text15"> 中华人民共和国</div>
+    <div class="text16"> 中华人民共和国</div>
+    <!--<script>
+      document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>-->
+    <!--
+    1、拿到设计图，计算出页面的总宽，为了好计算，取100px的font-size，如果设计图是iPhone6的那么计算出的就是7.5rem，如果页面是iPhone5的那么计算出的结果就是6.4rem。
+    2、动态设置html标签的font-size值：
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 以rem为单位的页面总宽 + 'px';
+    3、做页面是测量设计图的px尺寸除以100得到rem尺寸。
+    4、和淘宝的做法一样，文字字体大小不要使用rem换算。
+    -->
+    <script>
+      (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = clientWidth/7.5 + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+    </script>
+  </body>
+</html>

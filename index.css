@@ -1,0 +1,94 @@
+html,body,div{
+  margin:0;
+  padding:0;
+}
+/*
+
+*/
+.con{
+  width:7.5rem;
+  height:7.5rem;
+  background-color:red;
+  padding:0;
+  margin:0;
+}
+/*
+  1rem = 50px; 7.5rem*100=750px
+  ?rem= 16px;  ?rem = 26/100
+  0.26rem*50=13px; 26/100
+  0.24rem*50=12px; 24/100
+  0.28rem*50=14px; 28/100
+*/
+
+.text12{
+  font-size:0.24rem;
+}
+
+.text13 {
+  font-size: 0.26rem;
+}
+
+.text14 {
+  font-size: 0.28rem;
+}
+.text15 {
+  font-size: 0.30rem;
+}
+.text16{
+  font-size:0.32rem;
+}
+
+
+/*
+@media screen and (max-width: 321px) {
+    body {
+        font-size:16px
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:400px) {
+    body {
+        font-size:17px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size:19px
+    }
+}
+*/
+
+
+/*
+@media screen and (max-width: 321px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 400px) {
+  .text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .text {
+    font-size: 19px;
+  }
+}*/
+
+/*
+
+http://imochen.github.io/hotcss/
+
+http://hcysun.me/
+
+http://jcpplus.github.io/2015/06/13/2015-06-13-need-gr/
+https://segmentfault.com/a/1190000007276635
+http://blog.html5funny.com/2016/03/24/rem-flex-scale/
+https://segmentfault.com/a/1190000004705207
+http://jcpplus.github.io/2015/06/13/2015-06-13-need-gr/
+
+ */
